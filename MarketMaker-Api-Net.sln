@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketMaker.Api", "src\MarketMaker.Api\MarketMaker.Api.csproj", "{0AF61B72-DAB1-4BC9-AEA9-0BF64ECAE51E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketMaker.Api.Sample", "src\MarketMaker.Api.Sample\MarketMaker.Api.Sample.csproj", "{97796E13-3018-4838-B69C-03558F29CA1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AF61B72-DAB1-4BC9-AEA9-0BF64ECAE51E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF61B72-DAB1-4BC9-AEA9-0BF64ECAE51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF61B72-DAB1-4BC9-AEA9-0BF64ECAE51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF61B72-DAB1-4BC9-AEA9-0BF64ECAE51E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97796E13-3018-4838-B69C-03558F29CA1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97796E13-3018-4838-B69C-03558F29CA1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97796E13-3018-4838-B69C-03558F29CA1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97796E13-3018-4838-B69C-03558F29CA1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
