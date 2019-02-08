@@ -43,5 +43,11 @@ namespace MarketMaker.Api.Models.Statistics
 
 		[JsonProperty("unrealized_pnl")]
 		public double UnrealizedPnL { get; set; }
-	}
+
+	    [JsonProperty("position_cost")]
+	    public double PositionCost { get; set; }
+
+	    [JsonProperty("position_market_price")]
+	    public double PositionMarketPrice { get; set; }
+    }
 }

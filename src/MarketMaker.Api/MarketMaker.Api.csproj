@@ -56,6 +56,7 @@
     <Compile Include="Models\Config\Risks\RiskStrategyConfigDto.cs" />
     <Compile Include="Models\Statistics\AlgoInstrumentStatisticsDto.cs" />
     <Compile Include="Models\Statistics\ExecutionDto.cs" />
+    <Compile Include="Models\Statistics\OrderDto.cs" />
     <Compile Include="Models\Statistics\RealTimeStatisticsDto.cs" />
     <Compile Include="Models\Statistics\RiskStatisticsDto.cs" />
     <Compile Include="Models\Statistics\TradingAlertDto.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Subscriptions\EntityGenericSubscription.cs" />
     <Compile Include="Subscriptions\ExecutionsSubscription.cs" />
     <Compile Include="Subscriptions\HedgerMarketDataSubscription.cs" />
+    <Compile Include="Subscriptions\OrdersSubscription.cs" />
     <Compile Include="Subscriptions\SourceMarketDataSubscription.cs" />
     <Compile Include="Subscriptions\TargetMarketDataSubscription.cs" />
     <Compile Include="Subscriptions\TopicGenericSubscription.cs" />

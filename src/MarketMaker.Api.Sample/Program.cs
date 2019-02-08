@@ -112,13 +112,12 @@ namespace MMApi
 			    _originalSellMargins = _instrument.PricerConfig.SellMargins;
 
                 var tradeStatisticsSubs = ws.CreateTradingStatisticsSubscription();
-			    //var realtimeStatisticsSubs = ws.CreateRealTimeStatisticsSubscription();
 
                 // Subscribe for trade statistics
 			    tradeStatisticsSubs.Subscribe(OnStatisticsMessage);
 			    
 			    Console.ReadLine();
-			    tradeStatisticsSubs.Unsubscribe(OnStatisticsMessage);
+                tradeStatisticsSubs.Unsubscribe(OnStatisticsMessage);
 
                 /*
                 Console.Clear();
