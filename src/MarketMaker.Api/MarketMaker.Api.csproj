@@ -68,6 +68,7 @@
     <Compile Include="Subscriptions\EntityGenericSubscription.cs" />
     <Compile Include="Subscriptions\ExecutionsSubscription.cs" />
     <Compile Include="Subscriptions\HedgerMarketDataSubscription.cs" />
+    <Compile Include="Subscriptions\AlertsSubscription.cs" />
     <Compile Include="Subscriptions\OrdersSubscription.cs" />
     <Compile Include="Subscriptions\SourceMarketDataSubscription.cs" />
     <Compile Include="Subscriptions\TargetMarketDataSubscription.cs" />

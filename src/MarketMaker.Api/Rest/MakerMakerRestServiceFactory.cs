@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarketMaker.Api.Rest
 {
-	public static class MakerMakerRestServiceFactory
+	public static class MarketMakerRestServiceFactory
 	{
 		public static IMarketMakerRestService CreateMakerRestService(string url, string oauthPath, string authorization)
 		{

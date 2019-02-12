@@ -53,10 +53,14 @@ namespace MarketMaker.Api.Subscriptions
             return new ExecutionsSubscription(_stompWebSocketService);
 	    }
 
-	    public OrdersSubscription CreaOrdersSubscription()
+	    public OrdersSubscription CreateOrdersSubscription()
 	    {
             return new OrdersSubscription(_stompWebSocketService);
 	    }
 
+	    public AlertsSubscription CreateAlertsSubscription()
+	    {
+	        return new AlertsSubscription(_stompWebSocketService);
+	    }
     }
 }

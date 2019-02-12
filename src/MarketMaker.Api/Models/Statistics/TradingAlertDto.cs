@@ -30,7 +30,7 @@ namespace MarketMaker.Api.Models.Statistics
 		public string Action { get; set; }
 
 		[JsonProperty("duration")]
-		public long Duration { get; set; }
+		public string Duration { get; set; }
 
 		[JsonProperty("correlation_order_id")]
 		public string CorrelationOrderId { get; set; }

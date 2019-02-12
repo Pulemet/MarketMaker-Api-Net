@@ -100,7 +100,7 @@ namespace MMApi
 					Console.WriteLine("String is null or empty");
 					return;
 				}
-				mmRestService = MakerMakerRestServiceFactory.CreateMakerRestService(baseUrl, "/oauth/token", authorization);
+				mmRestService = MarketMakerRestServiceFactory.CreateMakerRestService(baseUrl, "/oauth/token", authorization);
 				mmRestService.Authorize("admin", "admin");
 
 
