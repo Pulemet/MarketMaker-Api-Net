@@ -31,6 +31,7 @@ namespace MMApi
 
         public static void OnStatisticsMessage(AlgoInstrumentStatisticsDto[] statistics)
 	    {
+            Console.WriteLine("OnStatisticsMessage");
             if(statistics == null)
                 return;
 
@@ -118,8 +119,10 @@ namespace MMApi
 			    
 			    Console.ReadLine();
                 tradeStatisticsSubs.Unsubscribe(OnStatisticsMessage);
+                ws.Close();
+			    Console.ReadLine();
 
-                /*
+			    /*
                 Console.Clear();
                 var menuItems = GetMenuItems();
                 var options = GetMenuOptions();
@@ -161,7 +164,7 @@ namespace MMApi
                     }
                 }
                 */
-            }
+			}
 			catch (Exception e)
 			{
 				Console.WriteLine(e.ToString());

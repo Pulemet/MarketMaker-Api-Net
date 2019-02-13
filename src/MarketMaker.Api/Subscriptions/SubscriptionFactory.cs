@@ -62,5 +62,10 @@ namespace MarketMaker.Api.Subscriptions
 	    {
 	        return new AlertsSubscription(_stompWebSocketService);
 	    }
+
+	    public void Close()
+	    {
+	        _stompWebSocketService.Close();
+	    }
     }
 }

@@ -132,6 +132,7 @@ namespace MarketMaker.Api.Subscriptions
 			if (!_actions.TryGetValue(action, out subIds))
 				return false;
 			string removedSubId = null;
+
 			foreach (var subId in subIds)
 			{
 				if (_topics[subId] == topic)
@@ -146,7 +147,8 @@ namespace MarketMaker.Api.Subscriptions
 				return false;
 			}
 
-			string unsubscribeMessage = "UNSUBSCRIBE\r\nid:" + removedSubId + "\r\n\r\n\0";
+			string unsubscribeMessage = "UNSUBSCRIBE\r\nid:sub-" + removedSubId + "\r\nack:auto\r\n" + "destination:" + topic + "\r\n\r\n\0";
+            //Console.WriteLine(unsubscribeMessage);
 			_socket.Send(unsubscribeMessage);
 
 			subIds.Remove(removedSubId);
@@ -155,11 +157,16 @@ namespace MarketMaker.Api.Subscriptions
 			_topics.Remove(removedSubId);
 			_subscribers.Remove(removedSubId);
 
-            if(_subscribers.Count == 0)
-                _pingTimer.Stop();
+            if (_subscribers.Count == 0)
+		        _pingTimer.Stop();
 
             return true;
 		}
+
+	    public void Close()
+	    {
+            _socket.Close();
+	    }
 	}
 
 	public interface IStompWebSocketService
