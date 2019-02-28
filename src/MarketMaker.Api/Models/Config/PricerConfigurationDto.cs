@@ -33,5 +33,8 @@ namespace MarketMaker.Api.Models.Config
 
 	    [JsonProperty("min_spread")]
 	    public string MinSpread { get; set; }
+
+	    [JsonProperty("take_out")]
+	    public double? TakeOut { get; set; }
     }
 }
