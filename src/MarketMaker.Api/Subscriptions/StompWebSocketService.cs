@@ -165,6 +165,7 @@ namespace MarketMaker.Api.Subscriptions
 
 	    public void Close()
 	    {
+	        _socket.Send("DISCONNECT\r\n\r\n\0");
             _socket.Close();
 	    }
 	}
